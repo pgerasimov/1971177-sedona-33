@@ -1,7 +1,7 @@
 # Personal project «Sedona»
 
-* Студент: [Pavel Gerasimov](https://up.htmlacademy.ru/htmlcss/33/user/1971177).
-* Наставник: [Tatyana Simonenko](https://htmlacademy.ru/profile/tatien).
+* Student: [Pavel Gerasimov](https://up.htmlacademy.ru/htmlcss/33/user/1971177).
+* Mentor: [Tatyana Simonenko](https://htmlacademy.ru/profile/tatien).
 
 ---
 <h2>Educational project on the layout of the website for self-study and exam</h2>
