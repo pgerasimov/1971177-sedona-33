@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Pavel Gerasimov](https://up.htmlacademy.ru/htmlcss/33/user/1971177).
-* Наставник: `Неизвестно`.
+* Наставник: [Tatyana Simonenko](https://htmlacademy.ru/profile/tatien).
 
 ---
 
