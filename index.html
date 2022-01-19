@@ -11,40 +11,46 @@
 </head>
 
 <body>
-<header class="grid-header">
+
+<header>
   <h1 class="hidden">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-  <nav class="left-menu">
-    <a href="#"><img src="img/logo.png" alt="Логотип Седона" class="logo-image" height="70" width="139"></a>
-    <ul>
-      <li><a href="#">Главная</a></li>
-      <li><a href="">О Седоне</a></li>
-      <li><a href="">Гостиницы</a></li>
-    </ul>
+
+  <nav>
+    <div class="menu-items__left-wrapper">
+      <a href=""><img src="img/logo.png" alt="Логотип Седона" class="logo-image" height="70" width="139"></a>
+      <ul class="menu-items__left-menu">
+        <li><a href="" class="menu-items__menu-item">Главная</a></li>
+        <li><a href="" class="menu-items__menu-item">О Седоне</a></li>
+        <li><a href="" class="menu-items__menu-item">Гостиницы</a></li>
+      </ul>
+    </div>
+
+    <div class="menu-items__right-wrapper">
+      <ul class="menu-items__right-menu">
+        <li><a href="#" class="menu-items__menu-item"><img src="img/search.png" alt="Поиск"></a></li>
+        <li><a href="#" class="menu-items__menu-item"><img src="img/favorite.png" alt="Избранное"></a></li>
+        <li><a class="menu-items__right-button">Хочу сюда!</a></li>
+      </ul>
+    </div>
+
   </nav>
-  <nav class="right-menu">
-    <ul>
-      <li><a href="#"><img src="img/search.png" alt="Поиск"></a></li>
-      <li><a href="#"><img src="img/favorite.png" alt="Избранное"></a></li>
-      <li>
-        <div class="menu-items__button-wrapper">
-          <a class="menu-items__button">Хочу сюда!</a>
-        </div>
-      </li>
-    </ul>
-  </nav>
-
-  <div class="main-image">
-    <img src="img/welcome.png" alt="welcome to the gorgeous" width="458" height="352" class="welcome-image">
-    <img src="img/divider.png" width="1200" height="57" class="divider" alt="Sedona">
-
-  </div>
-
-  <div class="slogan">
-    <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-    <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-  </div>
-
 </header>
+
+<main>
+  <section class="introduce">
+    <div class="main-image">
+      <img src="img/welcome.png" alt="welcome to the gorgeous" width="458" height="352" class="welcome-image">
+      <img src="img/divider.png" width="1200" height="57" class="divider" alt="Sedona">
+    </div>
+    <div class="slogan">
+      <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+    </div>
+  </section>
+
+
+</main>
+
 </body>
 
 </html>
