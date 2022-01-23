@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Седона — небольшой городок в Аризоне, заслуживающий большего!</title>
+</head>
+
+<body>
+
+<header>
+  <h1 class="hidden">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+
+  <nav class="menu-items">
+    <a href=""><img src="img/logo.png" alt="Логотип Седона." class="logo-image" height="70" width="139"></a>
+
+    <!--      TODO: увеличивать высоту меню при переполнении (?)-->
+    <ul class="menu-items__left-menu">
+      <li><a href="" class="menu-items__menu-item">Главная</a></li>
+      <li><a href="" class="menu-items__menu-item">О Седоне</a></li>
+      <li><a href="" class="menu-items__menu-item">Гостиницы</a></li>
+    </ul>
+    <div class="menu-items__right-wrapper">
+      <ul class="menu-items__right-menu">
+        <li><a href="#" class="menu-items__menu-item"><img src="img/search.png" alt="Поиск."></a></li>
+        <li><a href="#" class="menu-items__menu-item"><img src="img/favorite.png" alt="Избранное."></a></li>
+        <li><a class="button menu-items__right-button">Хочу сюда!</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h1>Гостиницы Седоны</h1>
+    <ul>
+      <li>
+        <img src="img/home-icon.svg" alt="alt">
+      </li>
+      <li>
+        <img src="img/arrow.svg" alt="alt">
+      </li>
+      <li>
+        <span>Гостиницы</span>
+      </li>
+    </ul>
+
+    <form id="search">
+      <fieldset class="infrastructure">
+        <legend>Инфраструктура</legend>
+        <div>
+          <input type="checkbox" name="swim" id="check_1">
+          <label for="check_1">Бассейн</label>
+        </div>
+        <div>
+          <input type="checkbox" name="parking" id="check_2">
+          <label for="check_2">Парковка</label>
+        </div>
+        <div>
+          <input type="checkbox" name="wifi" id="check_3">
+          <label for="check_3">Wi-Fi</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="hiuse-type">
+        <legend>Тип жилья:</legend>
+        <div>
+          <input type="radio" name="Hotel" id="radio_1">
+          <label for="radio_1">Гостиница</label>
+        </div>
+        <div>
+          <input type="radio" name="motel" id="radio_2">
+          <label for="radio_2">Мотель</label>
+        </div>
+        <div>
+          <input type="radio" name="apart" id="radio_3">
+          <label for="radio_3">Апартаменты</label>
+        </div>
+      </fieldset>
+
+      <div class="price">
+        <label>
+          <input type="number" placeholder="от" value="0">
+        </label>
+        <label>
+          <input type="number" placeholder="до" value="9000">
+        </label>
+        <label>
+          <input type="range" id="points" name="points" min="0" max="10" value="8">
+        </label>
+      </div>
+      <div class="buttons">
+        <button type="submit">Применить</button>
+        <input type="reset" value="Сбросить">
+      </div>
+    </form>
+  </section>
+
+  <section class="search-result">
+    <h2>Найдено гостиниц: 38</h2>
+    <label for="results"></label>
+    <select id="results" name="results">
+      <option value="volvo">Сначала дешевые</option>
+      <option value="saab">Сначала дорогие</option>
+    </select>
+
+    <div class="sort-wrapper">
+      <div class="sort">
+        <img src="img/mode-tile.svg" width="14" height="16" alt="alt">
+      </div>
+      <div class="sort">
+        <img src="img/mode-tile.svg" width="14" height="16" alt="alt">
+      </div>
+      <div class="sort">
+        <img src="img/mode-tile.svg" width="14" height="16" alt="alt">
+      </div>
+    </div>
+
+    <div class="grid-container"></div>
+    <ul>
+      <li>
+        <img src="img/hotel-1.png" alt="alt">
+        <h3>Amara Resort & Spa</h3>
+        <span>Гостиница</span>
+        <span>От 4000 Р</span>
+        <a href="" class="button">Подробнее</a>
+        <a href="" class="button2">в избранное</a>
+        <img src="img/star.svg" alt="Rating"><img src="img/star.svg" alt="Rating">
+        <img src="img/star.svg" alt="Rating"><img src="img/star.svg" alt="Rating">
+        <span>Рейтинг 8.5</span>
+      </li>
+      <li>
+        <img src="img/hotel-1.png" alt="alt">
+        <h3>Amara Resort & Spa</h3>
+        <span>Гостиница</span>
+        <span>От 4000 Р</span>
+        <a href="" class="button">Подробнее</a>
+        <a href="" class="button2">в избранное</a>
+        <img src="img/star.svg" alt="Rating"><img src="img/star.svg" alt="Rating">
+        <img src="img/star.svg" alt="Rating"><img src="img/star.svg" alt="Rating">
+        <span>Рейтинг 8.5</span>
+      </li>
+      <li>
+        <img src="img/hotel-1.png" alt="alt">
+        <h3>Amara Resort & Spa</h3>
+        <span>Гостиница</span>
+        <span>От 4000 Р</span>
+        <a href="" class="button">Подробнее</a>
+        <a href="" class="button2">в избранное</a>
+        <img src="img/star.svg" alt="Rating"><img src="img/star.svg" alt="Rating">
+        <img src="img/star.svg" alt="Rating"><img src="img/star.svg" alt="Rating">
+        <span>Рейтинг 8.5</span>
+      </li>
+      <li>
+        <img src="img/hotel-1.png" alt="alt">
+        <h3>Amara Resort & Spa</h3>
+        <span>Гостиница</span>
+        <span>От 4000 Р</span>
+        <a href="" class="button">Подробнее</a>
+        <a href="" class="button2">в избранное</a>
+        <img src="img/star.svg" alt="Rating"><img src="img/star.svg" alt="Rating">
+        <img src="img/star.svg" alt="Rating"><img src="img/star.svg" alt="Rating">
+        <span>Рейтинг 8.5</span>
+      </li>
+    </ul>
+
+    <div class="load-more">
+    <a href="" class="button2">Загрузить еще</a>
+    </div>
+    <div class="page-selector">
+      <a href="" class="button2">1</a>
+      <a href="" class="button2">2</a>
+      <a href="" class="button2">3</a>
+      <a href="" class="button2">4</a>
+      <a href="" class="button2">...</a>
+      <a href="" class="button2">10</a>
+    </div>
+  </section>
+
+  <section class="subscribe">
+    <h2>Подпишитесь на рассылку</h2>
+    <p class="subscribe__information">Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <div class="subscribe_search-form-wrapper">
+      <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="hidden" for="subscription-email">Введите ваш email</label>
+        <input class="email" id="subscription-email" placeholder="Ваш e-mail" type="email" name="subscription-email"
+               required>
+        <button class="button subscription-button" type="submit">Подписаться</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <ul class="footer__social">
+    <li>
+      <a href="https://www.facebook.com/htmlacademy">
+        <img src="img/twitter.svg" width="18" height="15" alt="Twitter HTMLAcademy.">
+      </a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/htmlacademy">
+        <img src="img/twitter.svg" width="18" height="15" alt="Twitter HTMLAcademy.">
+      </a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/htmlacademy">
+        <img src="img/twitter.svg" width="18" height="15" alt="Twitter HTMLAcademy.">
+      </a>
+    </li>
+  </ul>
+
+  <div class="footer__phone">
+    <a href="tel:+178128121212">+7(812)812-12-12</a>
+  </div>
+  <div class="footer__htmlacademy-logo">
+    <a href="https://htmlacademy.ru/">
+      <img src="img/logo_htmlacademy.svg" width="115" height="34" alt="HTMLAcademy.">
+    </a>
+  </div>
+
+</footer>
+
+</body>
+</html>
