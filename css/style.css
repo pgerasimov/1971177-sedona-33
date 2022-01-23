@@ -195,7 +195,7 @@ margin-right: 70px;
 
 /* Features styles */
 .features {
-  margin-top: 60px;
+  margin-top: 56px;
 }
 
 .features-list {
@@ -290,6 +290,7 @@ margin-right: 70px;
 
 .revers-title {
   color: black;
+  margin-top: 10px;
 }
 
 .features-list__description {
@@ -335,21 +336,22 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
   height: 120px;
 }
 
-.footer__social-wrapper {
+.footer__social {
   grid-area: 1 / 1 / 2 / 2;
   border: 1px solid black;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
 }
 
-.footer__social-wrapper > svg {
+.footer__social > li {
   margin-right: 30px;
 }
 
