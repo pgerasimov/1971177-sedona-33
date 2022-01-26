@@ -40,7 +40,7 @@
   <section class="search-filters">
     <div class="search-filters__title">
       <h1>Гостиницы Седоны</h1>
-      <img src="img/house-icon.svg" alt="Гостиницы." class="search-filters__image">
+      <a href="index.html"><img src="img/house-icon.svg" alt="Гостиницы." class="search-filters__image"></a>
       <img src="img/arrow-right-icon.png" alt="" class="search-filters__image">
       <span class="search-filters__hotel">Гостиницы</span>
     </div>
@@ -89,22 +89,26 @@
       <fieldset class="search-filters__fieldset">
         <legend class="search-filters__fieldset-title">Стоимость, ₽:</legend>
         <label>
-          <input type="number" placeholder="от" value="0" class="search-filters__fieldset--first-input">
+          <input type="text" placeholder="от" value="0" class="search-filters__fieldset--first-input price-input">
           <span class="search-filters__input-placeholder">от</span>
         </label>
         <label>
-          <input type="number" placeholder="до" value="9000" class="search-filters__fieldset--second-input">
+          <input type="text" placeholder="до" value="9000" class="search-filters__fieldset--second-input price-input">
           <span class="search-filters__input-placeholder">до</span>
 
           <input type="range"  name="points" min="0" max="10" value="10">
+          <p class="additional-thumb thumb-position"></p>
 
         </label>
+
       </fieldset>
 
       <div class="search-filters__price-buttons">
         <button type="submit" class="search-filters__accept-button">Применить</button>
         <input type="reset" value="Сбросить">
+
       </div>
+
     </div>
 
   </section>
