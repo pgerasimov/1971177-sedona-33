@@ -979,21 +979,10 @@ input[type="reset"] {
 
 }
 
-.stars-wrapper {
-  display: flex;
-  margin-top: 15px;
-  min-width: 100px;
-
-}
-
-.star {
-  margin-right: 7px;
-}
-
-
-h3 {
-  width: 211px;
-  height: 31px;
+.hotel-name {
+  max-width: 300px;
+  min-width: 215px;;
+  min-height: 31px;
   font-family: PT Sans, Arial, serif;
   font-style: normal;
   font-weight: bold;
@@ -1001,7 +990,22 @@ h3 {
   line-height: 31px;
   color: #000000;
   margin-top: 15px;
+  margin-bottom: 0;
+  padding-bottom: 16px;
 }
+
+.stars-wrapper {
+  display: flex;
+  margin-top: 15px;
+  min-width: 100px;
+}
+
+.star {
+  margin-right: 7px;
+}
+
+
+
 
 .house-name,
 .house-price {
