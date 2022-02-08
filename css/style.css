@@ -77,6 +77,7 @@ nav {
   font-family: PT Sans, Arial, serif;
   font-size: 10px;
   color: #FFFFFF;
+  margin-top: 2px;
 }
 
 ul {
@@ -150,6 +151,7 @@ ul {
   align-items: center;
   background-image: url("../src/images/index-background.jpg");
   background-repeat: no-repeat;
+  background-color: #809EC0;
   margin-top: -5px;
   order: -1;
   height: 485px;
@@ -205,6 +207,7 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .menu-items__right-button {
@@ -215,6 +218,7 @@ h2 {
   height: 37px;
   margin-top: -7px;
   margin-right: 70px;
+  text-decoration: none;
 
 }
 
@@ -261,6 +265,7 @@ h2 {
 .features-list__feature-image {
   width: 800px;
   height: 384px;
+  background-color: #C6CFBC;
 
 }
 
@@ -407,22 +412,25 @@ h2 {
 
 .subscribe__background {
   background-image: url("../src/images/subscribe-bg.png");
+  background-color: #475C84;
 }
 
 .subscribe-form {
+  display: flex;
   margin-top: 23px;
 }
 
 .hotel-search__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   width: 575px;
   height: 60px;
   border-radius: 10px;
   border: 0;
-  font-weight: bold;
   font-size: 20px;
   line-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
   color: #FFFFFF;
 }
 
@@ -434,14 +442,23 @@ h2 {
   height: 60px;
   margin-right: 0;
   padding-left: 22px;
+
 }
 
-.email::placeholder {
+.email::placeholder{
   font-family: PT Sans, Arial sans-serif;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
   opacity: 0.6;
+}
+
+input[id="subscription-email"] {
+  font-family: PT Sans, Arial sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #616161;
+
 }
 
 .subscription-button {
@@ -523,6 +540,7 @@ footer {
   grid-column-gap: 0;
   grid-row-gap: 0;
   background-image: url("../src/images/catalog-background.png");
+  background-color: #8BB2CF;
   height: 408px;
   margin-top: -5px;
 }
@@ -754,13 +772,19 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   text-transform: uppercase;
   color: #FFFFFF;
   border: 0;
+  cursor: pointer;
 
+}
+
+.reset-button {
+  cursor: pointer;
 }
 
 .favorite-button {
   width: 140px;
   height: 37px;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .favorite-button__active {
@@ -775,6 +799,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   border-radius: 4px;
   font-size: 20px;
   line-height: 26px;
+  text-decoration: none;
 }
 
 .page-button {
@@ -782,6 +807,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   height: 55px;
   background-color: #83B3D3;
   border-radius: 4px;
+  text-decoration: none;
   margin-right: 7px;
 }
 
@@ -956,12 +982,14 @@ input[type="reset"] {
 .stars-wrapper {
   display: flex;
   margin-top: 15px;
+  min-width: 100px;
 
 }
 
 .star {
   margin-right: 7px;
 }
+
 
 h3 {
   width: 211px;
