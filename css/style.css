@@ -1112,3 +1112,7 @@ input[type="reset"] {
   margin-left: 72px;
   margin-top: 35px;
 }
+
+.bg-wrapper {
+  opacity: 0.2;
+}
