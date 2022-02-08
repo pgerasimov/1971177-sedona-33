@@ -60,9 +60,23 @@ nav {
 }
 
 .favorite-counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
   top: -10px;
   left: -15px;
+  background: #7DB54F;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+
+.favorite-counter__value {
+  font-family: PT Sans, Arial, serif;
+  font-size: 10px;
+  color: #FFFFFF;
 }
 
 ul {
@@ -214,7 +228,7 @@ h2 {
 .menu-items__menu-item:active,
 .active-link {
   border-bottom: 2px solid #756257;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
 }
 
 /* Features styles */
