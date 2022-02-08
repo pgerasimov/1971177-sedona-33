@@ -490,6 +490,23 @@ h2 {
   opacity: 0.6;
 }
 
+.email:hover {
+  background-color: #E6E6E6;
+}
+
+.email:focus {
+  background: #E6E6E6;
+  border: 3px solid #83B3D3;
+  margin-top: -2px;
+  margin-right: 4px;
+}
+
+.email:invalid {
+  border: 2px solid #FF5757;
+  margin-top: -2px;
+  margin-right: 4px;
+}
+
 input[id="subscription-email"] {
   font-family: PT Sans, Arial sans-serif;
   font-size: 18px;
