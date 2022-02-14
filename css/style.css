@@ -683,27 +683,60 @@ footer {
 }
 
 .search-filters__title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  max-width: 500px;
   grid-area: 1 / 1 / 2 / 4;
   align-self: flex-start;
   margin-left: 71px;
-
-
+  justify-content: flex-start;
+  align-items: center;
 }
+
+
+.search-filters__title > a > svg {
+  fill: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
 
 .search-filters__title>h1 {
   margin-top: 35px;
 }
 
+
 .search-filters__image {
-  margin-right: 10px;
+  fill: white;
+padding: 3px 8px;
 }
 
+.arrow {
+  opacity: 0.4;
+}
 
 .search-filters__hotel {
   font-family: PT Sans, Arial, serif;
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
+}
+
+.catalog-submenu > a {
+  text-decoration: none;
+
+}
+
+.catalog-submenu:hover {
+  opacity: 0.6;
+}
+
+.catalog-submenu > a:focus{
+  outline: none;
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+  margin: 0;
+  padding: 0;
 }
 
 
