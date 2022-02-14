@@ -4,7 +4,7 @@
   font-style: normal;
   font-weight: 400;
   src: local("PT Sans"),
-  url("../fonts/ptsans-400.woff2") format("woff2");
+    url("../fonts/ptsans-400.woff2") format("woff2");
 }
 
 /*bold font*/
@@ -13,7 +13,7 @@
   font-style: normal;
   font-weight: 700;
   src: local("PT Sans"),
-  url("../fonts/ptsans-700.woff2") format("woff2");
+    url("../fonts/ptsans-700.woff2") format("woff2");
 
 }
 
@@ -62,7 +62,7 @@ nav {
 .favorite-counter__value {
   font-family: PT Sans, Arial, serif;
   position: absolute;
-  font-weight: normal ;
+  font-weight: normal;
   font-size: 10px;
   background: #7DB54F;
   border-radius: 50%;
@@ -83,6 +83,7 @@ nav {
   display: flex;
   justify-content: center;
 }
+
 ul {
   padding: 0;
   margin: 0;
@@ -112,11 +113,11 @@ ul {
   margin-left: 13px;
 }
 
-.menu-items__left-menu > li {
+.menu-items__left-menu>li {
   margin-left: 34px;
 }
 
-.menu-items__right-menu > li:nth-child(2) {
+.menu-items__right-menu>li:nth-child(2) {
   margin-left: 20px;
 }
 
@@ -183,7 +184,7 @@ h2 {
 
 }
 
-.slogan > p {
+.slogan>p {
   font-family: PT Sans, Arial, serif;
   font-size: 22px;
   line-height: 36px;
@@ -236,10 +237,15 @@ h2 {
 
 
 .more-button {
-  text-decoration: none;
   width: 133px;
+  height: 37px;
   margin-right: 25px;
   margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
 }
 
 .active-link {
@@ -252,10 +258,9 @@ h2 {
 }
 
 .icon-hover:hover,
-.icon-hover:hover + .favorite-counter__value{
+.icon-hover:hover+.favorite-counter__value {
   fill: #756257;
   color: rgba(255, 255, 255, 0.3)
-
 }
 
 .menu-item__hover-active:active {
@@ -351,12 +356,12 @@ h2 {
 }
 
 
-.features > ul:nth-child(odd) > .features-list__feature-item:nth-child(odd),
-.features > ul:nth-child(even) > .features-list__feature-item:nth-child(odd) {
+.features>ul:nth-child(odd)>.features-list__feature-item:nth-child(odd),
+.features>ul:nth-child(even)>.features-list__feature-item:nth-child(odd) {
   background: rgba(131, 179, 211, 0.12);
 }
 
-.features > ul:nth-child(even) > .features-list__feature-item:nth-child(even) {
+.features>ul:nth-child(even)>.features-list__feature-item:nth-child(even) {
   background: rgba(131, 179, 211, 0.2);
 }
 
@@ -390,7 +395,7 @@ h2 {
   margin-bottom: 50px;
 }
 
-.catalog_subscribe > p {
+.catalog_subscribe>p {
   width: 520px;
   font-family: PT Sans, Arial, serif;
   font-style: normal;
@@ -402,11 +407,11 @@ h2 {
 
 }
 
-.hotel-search > h2 {
+.hotel-search>h2 {
   margin-top: 90px
 }
 
-.subscribe > h2 {
+.subscribe>h2 {
   font-family: PT Sans, Arial, serif;
   font-weight: bold;
   font-size: 30px;
@@ -416,7 +421,7 @@ h2 {
   margin-top: 100px;
 }
 
-.catalog_subscribe > h2 {
+.catalog_subscribe>h2 {
   color: black;
 }
 
@@ -555,18 +560,18 @@ footer {
   fill: #83B3D3;
 }
 
-.social-icon__base:hover{
+.social-icon__base:hover {
   fill: #68A2CA;
 }
 
-.social-icon__base:active{
+.social-icon__base:active {
   outline: none;
   border: 0px;
   fill: #68A2CA;
   opacity: 30%;
 }
 
-.social-icon > a:focus {
+.social-icon>a:focus {
   outline: none;
   border: 3px solid #83B3D3;
   box-sizing: border-box;
@@ -586,7 +591,7 @@ footer {
 
 }
 
-.footer__social > li {
+.footer__social>li {
   margin-right: 25px;
 }
 
@@ -606,18 +611,18 @@ footer {
 
 
 
-.footer__phone > a {
+.footer__phone>a {
   font-family: PT Sans, Arial, serif;
   text-decoration: none;
   color: black;
 }
 
-.footer__phone > a:hover,
-.footer__phone > a:focus  {
+.footer__phone>a:hover,
+.footer__phone>a:focus {
   color: #756257;
 }
 
-.footer__phone > a:focus {
+.footer__phone>a:focus {
   border: 3px solid #83B3D3;
   box-sizing: border-box;
   border-radius: 10px;
@@ -625,7 +630,7 @@ footer {
   outline: none;
 }
 
-.footer__phone > a:active {
+.footer__phone>a:active {
   border: none;
   color: #756257;
   opacity: 0.3;
@@ -646,7 +651,7 @@ footer {
   fill: #000000;
 }
 
-.academy-icon__base:hover{
+.academy-icon__base:hover {
   fill: #756257;
 }
 
@@ -655,7 +660,7 @@ footer {
   opacity: 30%;
 }
 
-.footer__htmlacademy-logo > a:focus {
+.footer__htmlacademy-logo>a:focus {
   outline: none;
   border: 3px solid #83B3D3;
   box-sizing: border-box;
@@ -685,7 +690,7 @@ footer {
 
 }
 
-.search-filters__title > h1 {
+.search-filters__title>h1 {
   margin-top: 35px;
 }
 
@@ -737,10 +742,10 @@ input[type="radio"]:not(:checked) {
   left: -9999px;
 }
 
-input[type="checkbox"]:checked + label,
-input[type="checkbox"]:not(:checked) + label,
-input[type="radio"]:checked + label,
-input[type="radio"]:not(:checked) + label {
+input[type="checkbox"]:checked+label,
+input[type="checkbox"]:not(:checked)+label,
+input[type="radio"]:checked+label,
+input[type="radio"]:not(:checked)+label {
   display: inline-block;
   position: relative;
   padding-left: 45px;
@@ -750,10 +755,10 @@ input[type="radio"]:not(:checked) + label {
 
 /* draw own checkboxes and radio */
 
-input[type="checkbox"]:checked + label:before,
-input[type="checkbox"]:not(:checked) + label:before,
-input[type="radio"]:checked + label:before,
-input[type="radio"]:not(:checked) + label:before {
+input[type="checkbox"]:checked+label:before,
+input[type="checkbox"]:not(:checked)+label:before,
+input[type="radio"]:checked+label:before,
+input[type="radio"]:not(:checked)+label:before {
   content: "";
   position: absolute;
   left: 0;
@@ -764,27 +769,27 @@ input[type="radio"]:not(:checked) + label:before {
   background-color: #ffffff;
 }
 
-input[type="checkbox"]:checked + label:before,
-input[type="checkbox"]:not(:checked) + label:before {
+input[type="checkbox"]:checked+label:before,
+input[type="checkbox"]:not(:checked)+label:before {
   border-radius: 4px;
 }
 
-input[type="radio"]:checked + label:before,
-input[type="radio"]:not(:checked) + label:before {
+input[type="radio"]:checked+label:before,
+input[type="radio"]:not(:checked)+label:before {
   border-radius: 100%;
 }
 
-input[type="checkbox"]:checked + label:after,
-input[type="checkbox"]:not(:checked) + label:after,
-input[type="radio"]:checked + label:after,
-input[type="radio"]:not(:checked) + label:after {
+input[type="checkbox"]:checked+label:after,
+input[type="checkbox"]:not(:checked)+label:after,
+input[type="radio"]:checked+label:after,
+input[type="radio"]:not(:checked)+label:after {
   content: "";
   position: absolute;
 
 }
 
-input[type="checkbox"]:checked + label:after,
-input[type="checkbox"]:not(:checked) + label:after {
+input[type="checkbox"]:checked+label:after,
+input[type="checkbox"]:not(:checked)+label:after {
   left: 5px;
   top: 4px;
   width: 10px;
@@ -795,8 +800,8 @@ input[type="checkbox"]:not(:checked) + label:after {
   transform: rotate(-45deg);
 }
 
-input[type="radio"]:checked + label:after,
-input[type="radio"]:not(:checked) + label:after {
+input[type="radio"]:checked+label:after,
+input[type="radio"]:not(:checked)+label:after {
   left: 6px;
   top: 6px;
   width: 10px;
@@ -805,17 +810,17 @@ input[type="radio"]:not(:checked) + label:after {
   background-color: #3F5E72;
 }
 
-input[type="checkbox"]:not(:checked) + label:after,
-input[type="radio"]:not(:checked) + label:after {
+input[type="checkbox"]:not(:checked)+label:after,
+input[type="radio"]:not(:checked)+label:after {
   opacity: 0;
 }
 
-input[type="checkbox"]:checked + label:after,
-input[type="radio"]:checked + label:after {
+input[type="checkbox"]:checked+label:after,
+input[type="radio"]:checked+label:after {
   opacity: 1;
 }
 
-.search-filters__items > li {
+.search-filters__items>li {
   margin-bottom: 13px;
   font-family: PT Sans, Arial, serif;
   font-size: 18px;
@@ -908,6 +913,22 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
 }
 
+
+.search-filters__accept-button:hover:not(.favorite-button__active),
+.search-filters__accept-button:focus:not(.favorite-button__active) {
+  background: #68A2CA;
+}
+
+.search-filters__accept-button:focus:not(.favorite-button__active) {
+  outline: none;
+  border: 3px solid #756257;
+}
+
+.search-filters__accept-button:active:not(.favorite-button__active) {
+  border: 0;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .reset-button {
   cursor: pointer;
 }
@@ -915,13 +936,17 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 .favorite-button {
   width: 140px;
   height: 37px;
-  margin-top: 10px;
+  margin-top: 16px;
   cursor: pointer;
 }
 
 .favorite-button__active {
   background: #7DB54F;
   border-radius: 4px;
+  width: 140px;
+  height: 37px;
+  margin-top: 16px;
+  cursor: pointer;
 }
 
 .load-more__button {
@@ -1049,7 +1074,7 @@ input[type="reset"] {
 
 }
 
-.search-results__sort-input > select {
+.search-results__sort-input>select {
   height: 48px;
   width: 287px;
 
@@ -1113,7 +1138,8 @@ input[type="reset"] {
 
 .hotel-name {
   max-width: 300px;
-  min-width: 215px;;
+  min-width: 215px;
+  ;
   min-height: 31px;
   font-family: PT Sans, Arial, serif;
   font-style: normal;
@@ -1138,8 +1164,8 @@ input[type="reset"] {
 
 .house-name,
 .house-price {
-  width: 133px;
-  height: 23px;
+  min-width: 133px;
+  min-height: 23px;
   font-family: PT Sans, Arial, serif;
   font-size: 18px;
   line-height: 23px;
