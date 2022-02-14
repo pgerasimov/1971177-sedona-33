@@ -173,7 +173,7 @@ ul {
 }
 
 h2 {
-  font-family: PT Sans, Arial sans-serif;
+  font-family: PT Sans, Arial, serif;
   width: 720px;
   text-transform: uppercase;
   text-align: center;
@@ -184,7 +184,7 @@ h2 {
 }
 
 .slogan > p {
-  font-family: PT Sans, Arial sans-serif;
+  font-family: PT Sans, Arial, serif;
   font-size: 22px;
   line-height: 36px;
   text-align: center;
@@ -200,7 +200,7 @@ h2 {
 .button {
   background: #756257;
   border-radius: 4px;
-  font-family: PT Sans, Arial sans-serif;
+  font-family: PT Sans, Arial, serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -307,7 +307,7 @@ h2 {
 
 .features-summary__description {
   width: 220px;
-  font-family: PT Sans, Arial sans-serif;
+  font-family: PT Sans, Arial, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -334,7 +334,7 @@ h2 {
 .features-item__description {
 
   width: 250px;
-  font-family: PT Sans, Arial sans-serif;
+  font-family: PT Sans, Arial, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -347,7 +347,7 @@ h2 {
 }
 
 .features-item__title {
-  font-family: PT Sans, Arial sans-serif;
+  font-family: PT Sans, Arial, serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -415,7 +415,7 @@ h2 {
 }
 
 .subscribe > h2 {
-  font-family: PT Sans, Arial sans-serif;
+  font-family: PT Sans, Arial, serif;
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
@@ -430,7 +430,7 @@ h2 {
 
 .paragraph {
   font-size: 22px;
-  font-family: PT Sans, Arial sans-serif;
+  font-family: PT Sans, Arial, serif;
   font-weight: 400;
   line-height: 26px;
   text-align: center;
@@ -483,7 +483,7 @@ h2 {
 }
 
 .email::placeholder {
-  font-family: PT Sans, Arial sans-serif;
+  font-family: PT Sans, Arial, serif;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
@@ -508,7 +508,7 @@ h2 {
 }
 
 input[id="subscription-email"] {
-  font-family: PT Sans, Arial sans-serif;
+  font-family: PT Sans, Arial, serif;
   font-size: 18px;
   line-height: 26px;
   color: #616161;
@@ -522,7 +522,7 @@ input[id="subscription-email"] {
   border-radius: 0 10px 10px 0;
   border: 0;
   margin-left: -4px;
-  font-family: PT Sans, Arial sans-serif;
+  font-family: PT Sans, Arial, serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -570,7 +570,7 @@ footer {
 }
 
 .footer__phone > a {
-  font-family: PT Sans, Arial sans-serif;
+  font-family: PT Sans, Arial, serif;
   text-decoration: none;
   color: black;
 }
@@ -617,7 +617,7 @@ footer {
 
 
 .search-filters__hotel {
-  font-family: PT Sans, Arial sans-serif;
+  font-family: PT Sans, Arial, serif;
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
