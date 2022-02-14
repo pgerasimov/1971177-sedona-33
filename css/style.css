@@ -197,7 +197,8 @@ h2 {
 
 }
 
-.button {
+.button,
+.subscription-button {
   background: #756257;
   border-radius: 4px;
   font-family: PT Sans, Arial, serif;
@@ -234,12 +235,6 @@ h2 {
 }
 
 
-.button:focus {
-  border: 3px solid #83B3D3;
-}
-
-
-
 .more-button {
   text-decoration: none;
   width: 133px;
@@ -256,15 +251,12 @@ h2 {
   color: #756257;
 }
 
-.icon-hover:hover {
+.icon-hover:hover,
+.icon-hover:hover + .favorite-counter__value{
   fill: #756257;
-}
-
-.icon-favorite__active:hover {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3)
 
 }
-
 
 .menu-item__hover-active:active {
   color: #756257;
@@ -497,14 +489,17 @@ h2 {
 .email:focus {
   background: #E6E6E6;
   border: 3px solid #83B3D3;
-  margin-top: -2px;
   margin-right: 4px;
+  height: 62px;
+  width: 600px;
+  box-sizing: border-box;
 }
 
 .email:invalid {
   border: 2px solid #FF5757;
   margin-top: -2px;
   margin-right: 4px;
+  background-color: #FFFFFF;
 }
 
 input[id="subscription-email"] {
@@ -522,14 +517,29 @@ input[id="subscription-email"] {
   border-radius: 0 10px 10px 0;
   border: 0;
   margin-left: -4px;
-  font-family: PT Sans, Arial, serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 700;
   line-height: 26px;
-  text-align: center;
-
 }
+
+.subscription-button:hover,
+.subscription-button:focus,
+.subscription-button:active {
+  background: #68A2CA;
+}
+
+.subscription-button:focus {
+  border: 3px solid #756257;
+  border-radius: 0px 10px 10px 0px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.subscription-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  border: 0;
+}
+
 
 footer {
   display: grid;
@@ -540,6 +550,31 @@ footer {
   grid-row-gap: 0;
   height: 120px;
 }
+
+.social-icon__base {
+  fill: #83B3D3;
+}
+
+.social-icon__base:hover{
+  fill: #68A2CA;
+}
+
+.social-icon__base:active{
+  outline: none;
+  border: 0px;
+  fill: #68A2CA;
+  opacity: 30%;
+}
+
+.social-icon > a:focus {
+  outline: none;
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
 
 .footer__social {
   grid-area: 1 / 1 / 2 / 2;
@@ -569,10 +604,32 @@ footer {
 
 }
 
+
+
 .footer__phone > a {
   font-family: PT Sans, Arial, serif;
   text-decoration: none;
   color: black;
+}
+
+.footer__phone > a:hover,
+.footer__phone > a:focus  {
+  color: #756257;
+}
+
+.footer__phone > a:focus {
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 15px;
+  outline: none;
+}
+
+.footer__phone > a:active {
+  border: none;
+  color: #756257;
+  opacity: 0.3;
+
 }
 
 .footer__htmlacademy-logo {
@@ -583,6 +640,27 @@ footer {
   align-items: center;
   margin-right: 72px;
 
+}
+
+.academy-icon__base {
+  fill: #000000;
+}
+
+.academy-icon__base:hover{
+  fill: #756257;
+}
+
+.academy-icon__base:active {
+  fill: #756257;
+  opacity: 30%;
+}
+
+.footer__htmlacademy-logo > a:focus {
+  outline: none;
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 /* Catalog */
