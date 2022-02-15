@@ -4,7 +4,7 @@
   font-style: normal;
   font-weight: 400;
   src: local("PT Sans"),
-    url("../fonts/ptsans-400.woff2") format("woff2");
+  url("../fonts/ptsans-400.woff2") format("woff2");
 }
 
 /*bold font*/
@@ -13,7 +13,7 @@
   font-style: normal;
   font-weight: 700;
   src: local("PT Sans"),
-    url("../fonts/ptsans-700.woff2") format("woff2");
+  url("../fonts/ptsans-700.woff2") format("woff2");
 
 }
 
@@ -113,11 +113,11 @@ ul {
   margin-left: 13px;
 }
 
-.menu-items__left-menu>li {
+.menu-items__left-menu > li {
   margin-left: 34px;
 }
 
-.menu-items__right-menu>li:nth-child(2) {
+.menu-items__right-menu > li:nth-child(2) {
   margin-left: 20px;
 }
 
@@ -184,7 +184,7 @@ h2 {
 
 }
 
-.slogan>p {
+.slogan > p {
   font-family: PT Sans, Arial, serif;
   font-size: 22px;
   line-height: 36px;
@@ -258,7 +258,7 @@ h2 {
 }
 
 .icon-hover:hover,
-.icon-hover:hover+.favorite-counter__value {
+.icon-hover:hover + .favorite-counter__value {
   fill: #756257;
   color: rgba(255, 255, 255, 0.3)
 }
@@ -356,12 +356,12 @@ h2 {
 }
 
 
-.features>ul:nth-child(odd)>.features-list__feature-item:nth-child(odd),
-.features>ul:nth-child(even)>.features-list__feature-item:nth-child(odd) {
+.features > ul:nth-child(odd) > .features-list__feature-item:nth-child(odd),
+.features > ul:nth-child(even) > .features-list__feature-item:nth-child(odd) {
   background: rgba(131, 179, 211, 0.12);
 }
 
-.features>ul:nth-child(even)>.features-list__feature-item:nth-child(even) {
+.features > ul:nth-child(even) > .features-list__feature-item:nth-child(even) {
   background: rgba(131, 179, 211, 0.2);
 }
 
@@ -395,7 +395,7 @@ h2 {
   margin-bottom: 50px;
 }
 
-.catalog_subscribe>p {
+.catalog_subscribe > p {
   width: 520px;
   font-family: PT Sans, Arial, serif;
   font-style: normal;
@@ -407,11 +407,11 @@ h2 {
 
 }
 
-.hotel-search>h2 {
+.hotel-search > h2 {
   margin-top: 90px
 }
 
-.subscribe>h2 {
+.subscribe > h2 {
   font-family: PT Sans, Arial, serif;
   font-weight: bold;
   font-size: 30px;
@@ -421,7 +421,7 @@ h2 {
   margin-top: 100px;
 }
 
-.catalog_subscribe>h2 {
+.catalog_subscribe > h2 {
   color: black;
 }
 
@@ -571,7 +571,7 @@ footer {
   opacity: 30%;
 }
 
-.social-icon>a:focus {
+.social-icon > a:focus {
   outline: none;
   border: 3px solid #83B3D3;
   box-sizing: border-box;
@@ -591,7 +591,7 @@ footer {
 
 }
 
-.footer__social>li {
+.footer__social > li {
   margin-right: 25px;
 }
 
@@ -610,19 +610,18 @@ footer {
 }
 
 
-
-.footer__phone>a {
+.footer__phone > a {
   font-family: PT Sans, Arial, serif;
   text-decoration: none;
   color: black;
 }
 
-.footer__phone>a:hover,
-.footer__phone>a:focus {
+.footer__phone > a:hover,
+.footer__phone > a:focus {
   color: #756257;
 }
 
-.footer__phone>a:focus {
+.footer__phone > a:focus {
   border: 3px solid #83B3D3;
   box-sizing: border-box;
   border-radius: 10px;
@@ -630,7 +629,7 @@ footer {
   outline: none;
 }
 
-.footer__phone>a:active {
+.footer__phone > a:active {
   border: none;
   color: #756257;
   opacity: 0.3;
@@ -660,7 +659,7 @@ footer {
   opacity: 30%;
 }
 
-.footer__htmlacademy-logo>a:focus {
+.footer__htmlacademy-logo > a:focus {
   outline: none;
   border: 3px solid #83B3D3;
   box-sizing: border-box;
@@ -695,13 +694,13 @@ footer {
 }
 
 
-.search-filters__title>a>svg {
+.search-filters__title > a > svg {
   fill: rgb(255, 255, 255);
   text-decoration: none;
 }
 
 
-.search-filters__title>h1 {
+.search-filters__title > h1 {
   margin-top: 35px;
 }
 
@@ -722,7 +721,7 @@ footer {
   color: #FFFFFF;
 }
 
-.catalog-submenu>a {
+.catalog-submenu > a {
   text-decoration: none;
 
 }
@@ -780,10 +779,10 @@ input[type="radio"]:not(:checked) {
   left: -9999px;
 }
 
-input[type="checkbox"]:checked+label,
-input[type="checkbox"]:not(:checked)+label,
-input[type="radio"]:checked+label,
-input[type="radio"]:not(:checked)+label {
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label,
+input[type="radio"]:checked + label,
+input[type="radio"]:not(:checked) + label {
   display: inline-block;
   position: relative;
   padding-left: 45px;
@@ -793,10 +792,10 @@ input[type="radio"]:not(:checked)+label {
 
 /* draw own checkboxes and radio */
 
-input[type="checkbox"]:checked+label:before,
-input[type="checkbox"]:not(:checked)+label:before,
-input[type="radio"]:checked+label:before,
-input[type="radio"]:not(:checked)+label:before {
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before,
+input[type="radio"]:checked + label:before,
+input[type="radio"]:not(:checked) + label:before {
   content: "";
   position: absolute;
   left: 0;
@@ -807,20 +806,20 @@ input[type="radio"]:not(:checked)+label:before {
   background-color: #ffffff;
 }
 
-input[type="checkbox"]:checked:hover+label::before,
-input[type="checkbox"]:not(:checked):hover+label:before {
+input[type="checkbox"]:checked:hover + label::before,
+input[type="checkbox"]:not(:checked):hover + label:before {
   background: rgba(255, 255, 255, 0.6);
 }
 
 
-input[type="checkbox"]:checked:active+label::before,
-input[type="checkbox"]:not(:checked):active+label:before {
+input[type="checkbox"]:checked:active + label::before,
+input[type="checkbox"]:not(:checked):active + label:before {
   background: rgba(255, 255, 255, 0.3);
 }
 
 
-input[type="checkbox"]:checked:focus+label::before,
-input[type="checkbox"]:not(:checked):focus+label:before {
+input[type="checkbox"]:checked:focus + label::before,
+input[type="checkbox"]:not(:checked):focus + label:before {
   background: rgba(255, 255, 255, 0.6);
   border: 3px solid #83B3D3;
   border-radius: 4px;
@@ -829,28 +828,27 @@ input[type="checkbox"]:not(:checked):focus+label:before {
 }
 
 
-
-input[type="checkbox"]:checked+label:before,
-input[type="checkbox"]:not(:checked)+label:before {
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
   border-radius: 4px;
 }
 
-input[type="radio"]:checked+label:before,
-input[type="radio"]:not(:checked)+label:before {
+input[type="radio"]:checked + label:before,
+input[type="radio"]:not(:checked) + label:before {
   border-radius: 100%;
 }
 
-input[type="checkbox"]:checked+label:after,
-input[type="checkbox"]:not(:checked)+label:after,
-input[type="radio"]:checked+label:after,
-input[type="radio"]:not(:checked)+label:after {
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after,
+input[type="radio"]:checked + label:after,
+input[type="radio"]:not(:checked) + label:after {
   content: "";
   position: absolute;
 
 }
 
-input[type="checkbox"]:checked+label:after,
-input[type="checkbox"]:not(:checked)+label:after {
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
   left: 5px;
   top: 4px;
   width: 10px;
@@ -861,8 +859,8 @@ input[type="checkbox"]:not(:checked)+label:after {
   transform: rotate(-45deg);
 }
 
-input[type="radio"]:checked+label:after,
-input[type="radio"]:not(:checked)+label:after {
+input[type="radio"]:checked + label:after,
+input[type="radio"]:not(:checked) + label:after {
   left: 6px;
   top: 6px;
   width: 10px;
@@ -871,8 +869,8 @@ input[type="radio"]:not(:checked)+label:after {
   background-color: #3F5E72;
 }
 
-input[type="radio"]:checked:focus+label:before,
-input[type="radio"]:not(:checked):focus+label:before {
+input[type="radio"]:checked:focus + label:before,
+input[type="radio"]:not(:checked):focus + label:before {
   border: 3px solid #83B3D3;
   border-radius: 100%;
   box-sizing: border-box;
@@ -882,13 +880,13 @@ input[type="radio"]:not(:checked):focus+label:before {
 
 }
 
-input[type="checkbox"]:not(:checked)+label:after,
-input[type="radio"]:not(:checked)+label:after {
+input[type="checkbox"]:not(:checked) + label:after,
+input[type="radio"]:not(:checked) + label:after {
   opacity: 0;
 }
 
-input[type="checkbox"]:checked+label:after,
-input[type="radio"]:checked+label:after {
+input[type="checkbox"]:checked + label:after,
+input[type="radio"]:checked + label:after {
   opacity: 1;
 }
 
@@ -897,7 +895,7 @@ input[type="radio"]:hover {
   background-color: #FF5757;
 }
 
-.search-filters__items>li {
+.search-filters__items > li {
   margin-bottom: 13px;
   font-family: PT Sans, Arial, serif;
   font-size: 18px;
@@ -939,6 +937,7 @@ input[type=range] {
 
 input[type=range]:focus {
   outline: none;
+
 }
 
 input[type=range]::-webkit-slider-runnable-track {
@@ -960,8 +959,13 @@ input[type=range]::-webkit-slider-thumb,
   margin-top: -8px;
 }
 
-.thumb-position {
+input[type=range]::-webkit-slider-thumb:active{
+  border: 2px solid #83B3D3;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
 
+.thumb-position {
   margin-top: -45px;
 }
 
@@ -1011,6 +1015,46 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 .reset-button {
   cursor: pointer;
 }
+
+.reset-button:focus {
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 10px 20px 30px 20px;
+  outline: none;
+}
+
+.reset-button:hover {
+  opacity: 0.6;
+}
+
+.reset-button:active {
+  opacity: 0.3;
+}
+
+
+.search-results__sort-input:hover,
+.search-results__select:focus {
+  border: 2px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+}
+
+.search-results__sort-input:active {
+  opacity: 0.3;
+}
+
+.hotel-card > img:hover {
+  opacity: 0.6;
+}
+
+.hotel-card > img:focus {
+  border: 3px solid #83B3D3;
+}
+
+.hotel-card > img:active  {
+  opacity: 0.3;}
 
 .favorite-button {
   width: 140px;
@@ -1077,7 +1121,54 @@ input[type="reset"] {
 .search-filters__fieldset--first-input {
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px;
+}
 
+.search-filters__fieldset--first-input:hover {
+  opacity: 0.6;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.search-filters__fieldset--second-input:hover {
+  opacity: 0.6;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 0 4px 4px 0;
+  outline: none;
+}
+
+.search-filters__fieldset--first-input:focus {
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 3px #81B3D2;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.search-filters__fieldset--second-input:focus {
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 3px #81B3D2;
+  border-radius: 0 4px 4px 0;
+  outline: none;
+}
+
+.search-filters__fieldset--first-input:active {
+  outline: none;
+  background: #756257;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 4px 0 0 4px
+}
+
+.search-filters__fieldset--second-input:active {
+  outline: none;
+  background: #756257;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 0 4px 4px 0;
 }
 
 .search-filters__fieldset--second-input {
@@ -1096,7 +1187,6 @@ input[type="reset"] {
   line-height: 23px;
   color: #FFFFFF;
   padding-left: 19px;
-
 }
 
 /* Search results */
@@ -1153,7 +1243,7 @@ input[type="reset"] {
 
 }
 
-.search-results__sort-input>select {
+.search-results__sort-input > select {
   height: 48px;
   width: 287px;
 
@@ -1217,8 +1307,7 @@ input[type="reset"] {
 
 .hotel-name {
   max-width: 300px;
-  min-width: 215px;
-  ;
+  min-width: 215px;;
   min-height: 31px;
   font-family: PT Sans, Arial, serif;
   font-style: normal;
