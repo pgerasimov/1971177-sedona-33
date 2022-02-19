@@ -177,33 +177,37 @@
       </button>
     </div>
 
-    <form class="modal-form">
-      <label class="arrive-date label-style">Дата заезда:</label>
+    <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+      <label class="arrive-date label-style" for="arrive">Дата заезда:</label>
       <div class="calendar-icon">
-        <input class="input-date" type="text" value="" placeholder="27 апреля 2020">
+        <input class="input-date" type="text" value="" placeholder="27 апреля 2020" id="arrive">
         <span class="input-calendar-icon"></span>
         <div class="additional-msg">
           <span class="msg-error">Мы не можем отправить вас в прошлое.</span>
         </div>
       </div>
 
-      <label class="arrive-date label-style">Дата выезда:</label>
+      <label class="arrive-date label-style" for="depart">Дата выезда:</label>
       <div class="calendar-icon">
-        <input class="input-date" type="text" placeholder="1 сентября 2021">
+        <label>
+          <input class="input-date" type="text" placeholder="1 сентября 2021" id="depart">
+        </label>
         <span class="input-calendar-icon"></span>
         <div class="additional-msg">
           <span>На эти даты есть свободные номера. Пока есть.</span>
         </div>
       </div>
 
-      <label class="adult label-style">Взрослые:</label>
+      <label class="adult label-style" for="adults-count">Взрослые:</label>
       <div class="adult-wrapper">
         <a class="input-minus-icon">
           <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
           </svg>
         </a>
-        <input class="adult-count" type="text" value="2">
+
+          <input class="adult-count" type="text" value="2" id="adults-count">
+
         <a class="input-plus-icon">
           <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.3">
@@ -212,9 +216,11 @@
           </svg>
         </a>
       </div>
-      <label class="children label-style">Дети:
+      <label class="children label-style" for="child-count">Дети:
         <button type="button" class="child-info">
           <span class="info-icon">i</span>
+          <div class="child-info__open"><span class="child-info-text">Укажите количество детей, которые будут с вами,
+            возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span> </div>
         </button>
       </label>
       <div class="child-wrapper">
@@ -223,7 +229,9 @@
             <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
           </svg>
         </a>
-        <input type="text" value="1" class="adult-count">
+
+          <input type="text" value="1" class="adult-count" id="child-count">
+
         <a class="input-plus-icon">
           <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.3">

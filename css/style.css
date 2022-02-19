@@ -579,7 +579,7 @@ footer {
 
 .social-icon__base:active {
   outline: none;
-  border: 0px;
+  border: 0;
   fill: #68A2CA;
   opacity: 30%;
 }
@@ -954,18 +954,18 @@ input[type="radio"]:hover {
   margin-top: 26px;
 }
 
-input[type="number"] {
-  width: 143px;
-  height: 48px;
-  background: transparent;
-  border: 2px solid #FFFFFF;
-  box-sizing: border-box;
-  font-family: PT Sans, Arial, serif;
-  font-size: 18px;
-  line-height: 23px;
-  color: #FFFFFF;
-  padding-left: 19px;
-}
+/*input[type="number"] {*/
+/*  width: 143px;*/
+/*  height: 48px;*/
+/*  background: transparent;*/
+/*  border: 2px solid #FFFFFF;*/
+/*  box-sizing: border-box;*/
+/*  font-family: PT Sans, Arial, serif;*/
+/*  font-size: 18px;*/
+/*  line-height: 23px;*/
+/*  color: #FFFFFF;*/
+/*  padding-left: 19px;*/
+/*}*/
 
 input[type=range] {
   -webkit-appearance: none;
@@ -999,7 +999,7 @@ input[type=range]::-webkit-slider-thumb,
 
 input[type=range]::-webkit-slider-thumb:active {
   border: 2px solid #83B3D3;
-  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
 }
 
@@ -1376,7 +1376,6 @@ input[type="reset"] {
 .search-results__filter-icons--wrapper:hover,
 .search-results__filter-icons--wrapper:focus {
   border: 2px solid #83B3D3;
-  box-sizing: border-;
   border-radius: 4px;
   outline: none;
 }
@@ -1652,11 +1651,12 @@ input[type="reset"] {
 
 }
 .input-date::placeholder {
-  font-family: PT Sans, Arial, serif;
+  font-family: PT Sans,Arial, serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 40px;
-
+  color: #000000;
+  opacity: 1;
 }
 
 .adult {
@@ -1768,4 +1768,40 @@ input[type="reset"] {
 
 .msg-error {
   color: #FF5757;
+}
+
+
+.child-info__open {
+  background: #333333;
+  position: absolute;
+  width: 256px;
+  height: 143px;
+  bottom: 0;
+  right: 700px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+.child-info__open::after {
+  content: '';
+  position: absolute;
+  right: 109px;
+  top: -10px;
+  border-left: 19px solid transparent;
+  border-right: 19px solid transparent;
+  border-bottom: 19px solid #333333;
+
+}
+
+.child-info-text {
+  font-family: PT Sans, Arial, serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-align: left;
+  padding: 15px 18px 18px 22px;
+
 }
