@@ -26,7 +26,10 @@
           <svg width="19" height="19" viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg"
                class="icon-hover menu-item__hover-active">
             <path
-              d="M18.5 17.0083L14.8 13.3287C15.8 12.0359 16.5 10.3453 16.5 8.4558C16.5 4.08011 12.9 0.5 8.5 0.5C4.1 0.5 0.5 4.17956 0.5 8.55525C0.5 12.9309 4.1 16.511 8.5 16.511C10.3 16.511 12 15.9144 13.4 14.8204L17.1 18.5L18.5 17.0083ZM8.5 14.5221C5.2 14.5221 2.5 11.837 2.5 8.55525C2.5 5.27348 5.2 2.5884 8.5 2.5884C11.8 2.5884 14.5 5.27348 14.5 8.55525C14.5 11.837 11.8 14.5221 8.5 14.5221Z"/>
+              d="M18.5 17.0083L14.8 13.3287C15.8 12.0359 16.5 10.3453 16.5 8.4558C16.5 4.08011 12.9 0.5 8.5 0.5C4.1 0.5
+              0.5 4.17956 0.5 8.55525C0.5 12.9309 4.1 16.511 8.5 16.511C10.3 16.511 12 15.9144 13.4 14.8204L17.1
+              18.5L18.5 17.0083ZM8.5 14.5221C5.2 14.5221 2.5 11.837 2.5 8.55525C2.5 5.27348 5.2 2.5884 8.5 2.5884C11.8
+              2.5884 14.5 5.27348 14.5 8.55525C14.5 11.837 11.8 14.5221 8.5 14.5221Z"/>
           </svg>
         </a></li>
         <li>
@@ -173,17 +176,26 @@
         </svg>
       </button>
     </div>
+
     <form class="modal-form">
       <label class="arrive-date label-style">Дата заезда:</label>
       <div class="calendar-icon">
         <input class="input-date" type="text" value="" placeholder="27 апреля 2020">
         <span class="input-calendar-icon"></span>
+        <div class="additional-msg">
+          <span class="msg-error">Мы не можем отправить вас в прошлое.</span>
+        </div>
       </div>
-      <label class="depart-date label-style">Дата выезда:</label>
+
+      <label class="arrive-date label-style">Дата выезда:</label>
       <div class="calendar-icon">
         <input class="input-date" type="text" placeholder="1 сентября 2021">
         <span class="input-calendar-icon"></span>
+        <div class="additional-msg">
+          <span>На эти даты есть свободные номера. Пока есть.</span>
+        </div>
       </div>
+
       <label class="adult label-style">Взрослые:</label>
       <div class="adult-wrapper">
         <a class="input-minus-icon">
@@ -200,7 +212,7 @@
           </svg>
         </a>
       </div>
-      <label class="label-style">Дети:
+      <label class="children label-style">Дети:
         <button type="button" class="child-info">
           <span class="info-icon">i</span>
         </button>
@@ -211,7 +223,7 @@
             <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
           </svg>
         </a>
-        <input type="text" value="1" class="children-number">
+        <input type="text" value="1" class="adult-count">
         <a class="input-plus-icon">
           <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.3">
