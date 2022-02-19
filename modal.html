@@ -40,7 +40,8 @@
                 d="M8.9 17C8.6 17 8.3 16.9 8.1 16.6C2.7 10.5 1.4 9.1 1.1 8.7C0.4 7.8 0 6.6 0 5.4C0 2.4 2.4 0 5.5 0C6.8 0 8 0.5 9 1.3C10 0.5 11.3 0 12.5 0C15.5 0 18 2.4 18 5.4C18 6.7 17.5 7.9 16.7 8.8L9.7 16.7C9.5 16.9 9.3 17 8.9 17ZM2.9 7.5C3.2 7.9 6.4 11.5 9 14.4L15.2 7.4C15.7 6.9 15.9 6.2 15.9 5.4C15.9 3.6 14.4 2.1 12.6 2.1C11.6 2.1 10.6 2.6 9.9 3.4C9.6 3.7 9.3 3.8 9 3.8C8.7 3.8 8.4 3.6 8.2 3.4C7.5 2.6 6.5 2.1 5.5 2.1C3.7 2.1 2.2 3.6 2.2 5.4C2.1 6.3 2.5 7 2.9 7.5C2.8 7.5 2.8 7.5 2.9 7.5Z"/>
             </svg>
             <span class="favorite-counter__value">12</span></a></li>
-        <li><a href="" class="button menu-items__right-button">Хочу сюда!</a></li>
+        <li><a class="button menu-items__right-button" id="modal-button" onclick="ModalOpen();return false;">
+          Хочу сюда!</a></li>
       </ul>
     </div>
   </nav>
@@ -165,7 +166,9 @@
     </a>
   </div>
 </footer>
-<div class="modal">
+
+
+<div class="modal invisible">
   <div class="modal-wrapper">
     <div class="modal-header">
       <h1 class="modal-title">Поиск гостиницы в Седоне</h1>
@@ -186,18 +189,14 @@
           <span class="msg-error">Мы не можем отправить вас в прошлое.</span>
         </div>
       </div>
-
       <label class="arrive-date label-style" for="depart">Дата выезда:</label>
       <div class="calendar-icon">
-        <label>
           <input class="input-date" type="text" placeholder="1 сентября 2021" id="depart">
-        </label>
         <span class="input-calendar-icon"></span>
         <div class="additional-msg">
           <span>На эти даты есть свободные номера. Пока есть.</span>
         </div>
       </div>
-
       <label class="adult label-style" for="adults-count">Взрослые:</label>
       <div class="adult-wrapper">
         <a class="input-minus-icon">
@@ -205,9 +204,7 @@
             <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
           </svg>
         </a>
-
           <input class="adult-count" type="text" value="2" id="adults-count">
-
         <a class="input-plus-icon">
           <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.3">
@@ -216,22 +213,20 @@
           </svg>
         </a>
       </div>
+
       <label class="children label-style" for="child-count">Дети:
         <button type="button" class="child-info">
           <span class="info-icon">i</span>
-          <div class="child-info__open"><span class="child-info-text">Укажите количество детей, которые будут с вами,
-            возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span> </div>
         </button>
       </label>
+
       <div class="child-wrapper">
         <a class="input-minus-icon">
           <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
           </svg>
         </a>
-
           <input type="text" value="1" class="adult-count" id="child-count">
-
         <a class="input-plus-icon">
           <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.3">
@@ -243,7 +238,11 @@
       <button class="button-modal-form" type="submit">Найти</button>
     </form>
   </div>
+  <div class="child-info__block invisible"><span class="child-info-text">Укажите количество детей, которые будут с вами,
+            возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span> </div>
 </div>
+
+<script src="js/script.js"></script>
 </body>
 </html>
 
