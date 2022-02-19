@@ -1682,6 +1682,7 @@ input[type="reset"] {
   font-weight: bold;
   font-size: 18px;
   border: none;
+  margin-top: 8px;
 }
 
 .children {
@@ -1692,14 +1693,14 @@ input[type="reset"] {
 
 .input-minus-icon {
   position: absolute;
-  top: 10px;
+  top: 20px;
   left: 20px;
   border: none;
 }
 
 .input-plus-icon {
   position: absolute;
-  top: 15px;
+  top: 25px;
   right: 21px;
   border: none;
 }
@@ -1727,8 +1728,6 @@ input[type="reset"] {
 .child-wrapper {
   position: relative;
   grid-column: 4/5;
-  margin-top: 11px;
-
 }
 
 
@@ -1757,7 +1756,7 @@ input[type="reset"] {
   line-height: 2;
   font-weight: 700;
   color: #ffffff;
-  margin-top: 30px;
+  margin-top: 35px;
 }
 
 .additional-msg {
