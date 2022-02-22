@@ -9,7 +9,7 @@
 
 /*bold font*/
 @font-face {
-  font-family: 'PT Sans', Arial, serif;
+  font-family: 'PT Sans', serif;
   font-style: normal;
   font-weight: 700;
   src: local("PT Sans"),
@@ -378,7 +378,7 @@ h2 {
   line-height: 21px;
   text-align: center;
   color: #333333;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .features-item__title {
@@ -614,8 +614,8 @@ footer {
   display: flex;
   height: 120px;
   flex-direction: row;
-  justify-content: space-between ;
-  align-items: center ;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .social-icon__base {
@@ -828,7 +828,7 @@ footer {
   border: 3px solid transparent;
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 3px 0px;
+  padding: 3px 0;
 }
 
 .search-form {
@@ -1582,7 +1582,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   top: 0;
   bottom: 0;
   right: 0;
-  left: 0px;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1731,6 +1731,9 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   grid-column: 3/4;
   margin-left: 35px;
   padding-left: 16px;
+  display: flex;
+  margin-top: 10px;
+
 }
 
 .input-minus-icon {
@@ -1762,16 +1765,19 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 
 .child-info {
-  display: inline-block;
+  display: flex;
   width: 25px;
   height: 25px;
   background-color: #83B3D3;
   border: none;
   border-radius: 50%;
   margin-right: 15px;
-  margin-left: 8px;
-  margin-top: 14px;
-  padding: 4px 0 0 4px;
+  margin-left: 12px;
+  margin-top: 9px;
+  align-items: center;
+  justify-content: flex-start;
+
+
 }
 
 
@@ -1780,11 +1786,13 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   border-left: 7px solid transparent;
   border-right: 10px solid transparent;
   border-radius: 50px;
+  padding-left: 3px;
 }
 
 .child-wrapper {
   position: relative;
   grid-column: 4/5;
+
 }
 
 
@@ -1834,10 +1842,10 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 .child-info__block {
   background: #333333;
   position: relative;
-  width: 256px;
+  min-width: 256px;
   height: 143px;
-  top: 20px;
-  right: 120px;
+  top: 105px;
+  right: 140px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   display: flex;
@@ -1871,6 +1879,5 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 
 .overlay-disabled {
-  opacity: 1
-;
+  opacity: 1;
 }
