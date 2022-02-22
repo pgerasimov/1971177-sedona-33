@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
   <meta charset="UTF-8">
@@ -9,10 +9,8 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Седона — небольшой городок в Аризоне, заслуживающий большего!</title>
 </head>
-
 <body>
 <header>
-  <h1 class="hidden">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
   <nav class="menu-items">
     <a href="index.html"><img src="src/images/logo-sedona.svg" alt="Логотип Седона." class="logo-image" height="70"
                               width="139"></a>
@@ -126,8 +124,8 @@
             </label>
             <label>
               <input type="range" name="points" min="0" max="10" value="10" class="range-input">
-              <p class="additional-thumb thumb-position"></p>
             </label>
+            <div class="additional-thumb thumb-position"></div>
           </fieldset>
           <div class="search-filters__price-buttons">
             <button type="submit" class="search-filters__accept-button">Применить</button>
@@ -137,7 +135,6 @@
 </form>
   </section>
   <section class="search-results">
-
     <div class="search-results__header">
       <h2>Найдено гостиниц: 38</h2>
     </div>
@@ -184,7 +181,6 @@
         </a>
       </div>
     </div>
-
     <ul class="hotel-cards__wrapper">
       <li class="hotel-card">
         <img src="src/images/hotel-1.jpg" height="206" width="299" alt="Amara Resort & Spa.">
@@ -225,7 +221,6 @@
         </div>
         <span class="hotel-rating">Рейтинг: 8,5</span>
       </li>
-
       <li class="hotel-card hotel-card__warp">
         <img src="src/images/hotel-4.jpg" height="206" width="299" alt="Amara Resort & Spa.">
         <h3 class="hotel-name">GreenTree Inn</h3>
@@ -241,6 +236,7 @@
     </ul>
   </section>
   <section>
+    <h2 class="hidden">Результаты поиска гостиниц</h2>
     <div class="search-navigation">
       <a class="load-more__button">Загрузить ещё</a>
     </div>
@@ -268,7 +264,6 @@
         <button class="button subscription-button" type="submit">Подписаться</button>
       </form>
     </div>
-
   </section>
 </main>
 <footer>
@@ -284,7 +279,6 @@
             9.10006C1.8 8.30006 0.4 7.50006 0.5 5.30006C0.8 5.60006 1.6 5.80006 1.9 5.80006C1.1 5.60006 -0.2 2.50006
             0.9 0.900056C2.8 2.80006 4.9 4.50006 8.5 4.70006C8.7 2.30006 9.7 0.800056 11.6 0.200056Z"/>
         </svg>
-
       </a>
     </li>
     <li class="social-icon">
@@ -301,7 +295,6 @@
             d="M17 0H2.9C1.2 0 0 1.5 0 3.2V12.7C0 14.5 1.2 16 2.9 16H17.2C18.7 16 20.1 14.5 20.1 12.8V3.2C19.9 1.5 18.7
              0 17 0ZM7 11.8V4.2L13.7 8L7 11.8Z"/>
         </svg>
-
       </a>
     </li>
   </ul>
@@ -366,7 +359,6 @@
           d="M109.4 27.0001L105.8 18.1001H103.6L108.4 29.7001C108.1 30.6001 107.7 30.9001 106.7
           30.9001H104.2V32.9001H106.7C108.5 32.9001 109.5 32.1001 110.2 30.3001L114.9 18.1001H112.8L109.4 27.0001Z"/>
       </svg>
-
     </a>
   </div>
 </footer>
