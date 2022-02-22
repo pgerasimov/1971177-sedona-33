@@ -10,6 +10,7 @@
   <title>Седона — небольшой городок в Аризоне, заслуживающий большего!</title>
 </head>
 <body>
+<div class="overlay overlay-disabled">
 <header>
   <h1 class="hidden">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
   <nav class="menu-items">
@@ -18,6 +19,7 @@
     <ul class="menu-items__left-menu">
       <li><a href="" class="menu-items__menu-item menu-item__hover-active active-link">Главная</a></li>
       <li><a href="" class="menu-items__menu-item menu-item__hover-active">О Седоне</a></li>
+
       <li><a href="catalog.html" class="menu-items__menu-item menu-item__hover-active">Гостиницы</a></li>
     </ul>
     <div class="menu-items__right-wrapper">
@@ -47,7 +49,6 @@
   </nav>
 </header>
 <main>
-
   <section class="introduce">
     <div class="main-image">
       <img src="src/images/welcome.svg" alt="welcome to the gorgeous." width="458" height="352" class="welcome-image">
@@ -136,7 +137,6 @@
         <button class="button subscription-button" type="submit">Подписаться</button>
       </form>
     </div>
-
   </section>
 </main>
 <footer>
@@ -166,8 +166,7 @@
     </a>
   </div>
 </footer>
-
-
+</div>
 <div class="modal invisible">
   <div class="modal-wrapper">
     <div class="modal-header">
@@ -179,7 +178,6 @@
         </svg>
       </button>
     </div>
-
     <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
       <label class="arrive-date label-style" for="arrive">Дата заезда:</label>
       <div class="calendar-icon">
@@ -199,13 +197,13 @@
       </div>
       <label class="adult label-style" for="adults-count">Взрослые:</label>
       <div class="adult-wrapper">
-        <a class="input-minus-icon">
+        <a href="" class="input-minus-icon">
           <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
           </svg>
         </a>
           <input class="adult-count" type="text" value="2" id="adults-count">
-        <a class="input-plus-icon">
+        <a href="" class="input-plus-icon">
           <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.3">
               <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
@@ -213,21 +211,23 @@
           </svg>
         </a>
       </div>
-
       <label class="children label-style" for="child-count">Дети:
         <button type="button" class="child-info">
           <span class="info-icon">i</span>
+          <div class="child-info__block invisible">
+          <span class=" child-info-text">Укажите количество детей, которые будут с вами,
+            возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+          </div>
         </button>
       </label>
-
       <div class="child-wrapper">
-        <a class="input-minus-icon">
+      <a href="index.html" class="input-minus-icon">
           <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
           </svg>
         </a>
           <input type="text" value="1" class="adult-count" id="child-count">
-        <a class="input-plus-icon">
+        <a href="" class="input-plus-icon">
           <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.3">
               <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
@@ -238,10 +238,7 @@
       <button class="button-modal-form" type="submit">Найти</button>
     </form>
   </div>
-  <div class="child-info__block invisible"><span class="child-info-text">Укажите количество детей, которые будут с вами,
-            возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span> </div>
 </div>
-
 <script src="js/script.js"></script>
 </body>
 </html>

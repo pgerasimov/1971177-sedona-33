@@ -1592,11 +1592,11 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   top: 0;
   bottom: 0;
   right: 0;
-  left: 260px;
+  left: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999;
+  z-index: 9999;
 
 }
 
@@ -1609,7 +1609,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   justify-content: flex-start;
   align-items: center;
   width: 715px;
-  height: 561px;
+  min-height: 561px;
 }
 
 
@@ -1675,7 +1675,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 .input-calendar-icon {
   position: absolute;
   right: 30px;
-  bottom: 40px;
+  top: 30px;
   width: 16px;
   height: 15px;
   background-image: url("../src/icons/icon-calendar.svg");
@@ -1745,16 +1745,26 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
 .input-minus-icon {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 12px;
+  left: 10px;
   border: none;
+  width: 40px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .input-plus-icon {
   position: absolute;
-  top: 25px;
-  right: 21px;
+  top: 12px;
+  right: 11px;
   border: none;
+  width: 40px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .child {
@@ -1771,6 +1781,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   margin-right: 15px;
   margin-left: 8px;
   margin-top: 14px;
+  padding: 4px 0 0 4px;
 }
 
 
@@ -1801,6 +1812,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 
 .button-modal-form {
+  font-family: PT Sans, Arial, serif;
   grid-column: 1/-1;
   width: 575px;
   height: 60px;
@@ -1813,12 +1825,14 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   font-weight: 700;
   color: #ffffff;
   margin-top: 35px;
+  margin-bottom: 70px;
 }
 
 .additional-msg {
   font-family: PT Sans, Arial, serif;
   font-size: 16px;
   margin-top: 5px;
+  max-width: 400px;
 
 }
 
@@ -1828,13 +1842,12 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
 
 .child-info__block {
-
   background: #333333;
   position: relative;
   width: 256px;
   height: 143px;
-  top: 188px;
-  right: 360px;
+  top: 20px;
+  right: 120px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   display: flex;
@@ -1846,8 +1859,8 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 .child-info__block::after {
   content: '';
   position: absolute;
-  right: 109px;
-  top: -10px;
+  right: 108px;
+  bottom: 135px;
   border-left: 19px solid transparent;
   border-right: 19px solid transparent;
   border-bottom: 19px solid #333333;
@@ -1861,4 +1874,13 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   color: #FFFFFF;
   text-align: left;
   padding: 15px 18px 18px 22px;
+}
+
+.overlay {
+  opacity: 0.3;
+}
+
+.overlay-disabled {
+  opacity: 1
+;
 }
