@@ -191,6 +191,7 @@ h2 {
 .slogan > h2 {
   padding-top: 40px;
 }
+
 .slogan > p {
   font-family: PT Sans, Arial, serif;
   font-size: 22px;
@@ -479,7 +480,6 @@ h2 {
 }
 
 
-
 .catalog_subscribe > h2 {
   color: black;
 }
@@ -764,7 +764,7 @@ footer {
 /* Catalog */
 
 .search-filters {
-  background-image: url("../src/images/catalog-background.png") ;
+  background-image: url("../src/images/catalog-background.png");
   background-size: cover;
   background-color: #8BB2CF;
   background-overflow: visible;
