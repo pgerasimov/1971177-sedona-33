@@ -427,7 +427,7 @@ h2 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 5px;
+  /*padding-top: 5px;*/
   padding-bottom: 90px;
 }
 
@@ -435,9 +435,8 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 411px;
-  padding: 10px 0 30px 0;
-
+  min-height: 407px;
+  padding: 4px 0 0 0;
 }
 
 .catalog_subscribe > p {
@@ -452,16 +451,12 @@ h2 {
 }
 
 .hotel-search > h2 {
-  margin-top: 90px
+  padding-top: 29px;
 }
 
 .subscribe > h2 {
-  font-family: PT Sans, Arial, serif;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-  color: #333333;
+  color: #ffffff;
+  padding-top: 30px;
 }
 
 .catalog_subscribe > h2 {
@@ -474,12 +469,17 @@ h2 {
   font-weight: 400;
   line-height: 26px;
   text-align: center;
+  color: #ffffff;
+  max-width: 540px;
+  margin-top: 0;
+  padding-top: 5px;
 }
 
 .hotel-search__paragraph {
   margin-bottom: 50px;
-  margin-top: 10px;
+  /*margin-top: 10px;*/
   max-width: 720px;
+  padding-top: 10px;
 }
 
 .subscribe__paragraph {
@@ -659,7 +659,7 @@ footer {
   border: 3px solid transparent;
   box-sizing: border-box;
   border-radius: 10px;
-  padding: 10px;
+  padding: 12px;
 }
 
 .footer__phone {
@@ -839,7 +839,7 @@ footer {
 .search-filters__fieldset {
   border: 0;
   padding-bottom: 10px;
-  padding-left: 0px;
+  padding-left: 0;
 
 }
 
