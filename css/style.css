@@ -1031,6 +1031,7 @@ input[type=range] {
   -webkit-appearance: none;
   margin-top: 29px;
   width: 290px;
+  height: 4px;
 }
 
 input[type=range]:focus {
@@ -1049,6 +1050,16 @@ input[type=range]::-webkit-slider-runnable-track
 
 input[type=range]::-webkit-slider-thumb,
 .additional-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -10px;
+}
+
+input[type=range]::-moz-range-thumb {
   height: 20px;
   width: 20px;
   border-radius: 5px;
