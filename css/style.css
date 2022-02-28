@@ -37,7 +37,6 @@ h1 {
   font-size: 60px;
   line-height: 78px;
   color: #FFFFFF;
-  margin: 0;
 }
 
 /* Navigation and introduce section */
@@ -88,11 +87,11 @@ nav {
   justify-content: center;
 }
 
-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
+/*ul {*/
+/*  padding: 0;*/
+/*  margin: 0;*/
+/*  list-style: none;*/
+/*}*/
 
 .menu-items {
   display: flex;
@@ -111,6 +110,9 @@ ul {
   flex-wrap: wrap;
   align-items: center;
   max-width: 600px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 
 }
 
@@ -316,6 +318,9 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .features-list__feature-summary {
@@ -685,6 +690,8 @@ footer {
   margin-top: 10px;
   flex-wrap: wrap;
   width: 300px;
+ padding: 0;
+  list-style: none;
 }
 
 .footer__social > li {
@@ -706,7 +713,6 @@ footer {
   line-height: 40px;
   text-align: center;
   text-decoration: none;
-  margin-top: 10px;
   margin-left: 80px;
 }
 
@@ -804,6 +810,10 @@ footer {
 .search-filters__title > a > svg {
   fill: rgb(255, 255, 255);
   text-decoration: none;
+}
+
+.search-filters__title >  h1 {
+  margin: 0;
 }
 
 .submenu > a {
@@ -1004,7 +1014,9 @@ input[type="radio"]:hover {
 }
 
 .search-filters__items {
-  margin-left: 3px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 .search-filters__items > li {
   margin-bottom: 13px;
@@ -1412,7 +1424,6 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   grid-template-rows: auto;
   padding: 34px 72px 50px 71px;
 
-
 }
 
 .search-results__header {
@@ -1442,7 +1453,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 
 .search-results__filter-icons > a {
-  margin-right: 8px;
+  margin-right: 5px;
 }
 
 .search-results__filter-icons--wrapper:hover,
@@ -1511,7 +1522,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 .hotel-cards__wrapper {
   display: flex;
   width: 1100px;
-  padding-top: 20px;
+  padding-top: 5px;
   padding-left: 20px;
   flex-wrap: wrap;
 
@@ -1593,14 +1604,14 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   display: flex;
   justify-content: center;
   border: 1px solid #E6E6E6;
-  padding: 30px 0;
+  padding: 10px 0;
 }
 
 .search-navigation__links {
   display: flex;
   justify-content: flex-start;
   margin-left: 70px;
-  padding: 27px 0 0 4px;
+  padding: 50px 0 0 4px;
 }
 
 .modal {
